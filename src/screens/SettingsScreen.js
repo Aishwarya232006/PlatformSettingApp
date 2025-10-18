@@ -157,7 +157,11 @@ const SettingsScreen = () => {
             variant="primary"
             darkMode={settings.darkMode}
             onPress={() =>
-              Alert.alert('Success', ${isIOS ? 'iOS' : 'Android'} primary button)
+              Alert.alert(
+                'Success',
+                `${isIOS ? 'iOS' : 'Android'} primary button`,
+                [{ text: 'OK' }]
+              )
             }
           />
           <View style={styles.buttonSpacing} />
